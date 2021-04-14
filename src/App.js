@@ -13,14 +13,19 @@ function App() {
   };
 
   const likeCount = 193;
-  const isLiked = false;
+  const isLiked = true;
 
   return (
     <div className="App">
       <header className="App-header">
         <Card
-          /* prop ismi = { değişken } */
+          title={recipeItem.title}
+          image={recipeItem.image}
+          date={recipeItem.date}
+          description={recipeItem.description}
           author={recipeAuthor}
+          likeCount={likeCount}
+          like={isLiked}
         />
       </header>
     </div>
